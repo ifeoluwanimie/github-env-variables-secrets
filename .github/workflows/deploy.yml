@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: github-env-variables-se.jjdmug1.mongodb.net
-      MONGODB_USERNAME: ife
-      MONGODB_PASSWORD: Ed4emNTaoQYB5BBl
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
       - name: Get Code
